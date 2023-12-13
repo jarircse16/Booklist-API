@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src=js/title.js></script>
+
+    <title id="dynamicTitle">Default Title</title>
+
+</head>
+<body>
+
+<center><h1>Booklist API</h1>
+
+<div>
+    <h2>Books</h2>
+    <table border="1">
+        <thead>
+            <tr>
+              <!--  <th>ID</th> --> <!--Book ID Random Number No need to display-->
+                <th>Title</th>
+                <th>Author</th>
+                <th>Published At</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="booksList"></tbody>
+    </table>
+</div>
+
+<!-- Add new book form -->
+<div>
+    <h2>Add New Book</h2>
+    <form id="addBookForm">
+        <label>Title:</label>
+        <input type="text" id="title" required>
+        <br><br>
+        <label>Author:</label>
+        <input type="text" id="author" required>
+        <br><br>
+        <label>Published At:</label>
+        <input type="date" id="publishedAt" required>
+        <br><br>
+        <button type="submit">Add Book</button>
+    </form>
+</div><br>
+
+<!--Book Operations-->
+<script src=js/fetchbook.js></script> <!--SHOW BOOKS/READ BOOKS-->
+
+<script src=js/addbook.js></script><!--CREATE BOOKS/ADD BOOKS-->
+
+<script src=js/editbook.js></script><!--UPDATE BOOKS/EDIT BOOKS-->
+
+<script src=js/deletebooks.js></script><!--DELETE BOOKS/REMOVE BOOKS-->
+
+<!--Footer-->
+<object type="text/html" data="layouts/footer.html" width="100%" height="59px">
+    <!--Fallback message if browser doesn't support <object> tag or file not found-->
+    <p>Unable to load the footer</p>
+</object>
+
+</body>
+
+</html>

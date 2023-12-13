@@ -1,0 +1,54 @@
+/* Default styles for all screen sizes */
+body {
+    font-family: 'Consolas', monospace;
+    color: #333;
+    padding: 1px;
+}
+
+object {
+    font-family: 'Consolas', monospace;
+    color: #333;
+    padding: 1px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Responsive styles for medium screens */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+/* Responsive styles for large screens */
+@media screen and (min-width: 993px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
